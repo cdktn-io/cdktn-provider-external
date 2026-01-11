@@ -3,7 +3,7 @@
 name: stale
 on:
   schedule:
-    - cron: 8 1 * * *
+    - cron: 3 2 * * *
   workflow_dispatch: {}
 jobs:
   stale:

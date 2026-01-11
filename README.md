@@ -1,54 +1,48 @@
 
 # CDKTF prebuilt bindings for hashicorp/external provider version 2.3.5
 
-HashiCorp made the decision to stop publishing new versions of prebuilt [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.5) bindings for [CDK for Terraform](https://cdk.tf) on December 10, 2025. As such, this repository has been archived and is no longer supported in any way by HashiCorp. Previously-published versions of this prebuilt provider will still continue to be available on their respective package managers (e.g. npm, PyPi, Maven, NuGet), but these will not be compatible with new releases of `cdktf` past `0.21.0` and are no longer eligible for commercial support.
+This repo builds and publishes the [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
-As a reminder, you can continue to use the `hashicorp/external` provider in your CDK for Terraform (CDKTF) projects, even with newer versions of CDKTF, but you will need to generate the bindings locally. The easiest way to do so is to use the [`provider add` command](https://developer.hashicorp.com/terraform/cdktf/cli-reference/commands#provider-add), optionally with the `--force-local` flag enabled:
-
-`cdktf provider add hashicorp/external --force-local`
-
-For more information and additional examples, check out our documentation on [generating provider bindings manually](https://cdk.tf/imports).
-
-## Deprecated Packages
+## Available Packages
 
 ### NPM
 
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-external](https://www.npmjs.com/package/@cdktf/provider-external).
+The npm package is available at [https://www.npmjs.com/package/@cdktn/provider-external](https://www.npmjs.com/package/@cdktn/provider-external).
 
-`npm install @cdktf/provider-external`
+`npm install @cdktn/provider-external`
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-external](https://pypi.org/project/cdktf-cdktf-provider-external).
+The PyPI package is available at [https://pypi.org/project/cdktn-provider-external](https://pypi.org/project/cdktn-provider-external).
 
-`pipenv install cdktf-cdktf-provider-external`
+`pipenv install cdktn-provider-external`
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.External](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.External).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.External](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.External).
 
-`dotnet add package HashiCorp.Cdktf.Providers.External`
+`dotnet add package Io.Cdktn.Cdktn.Providers.External`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-external](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-external).
+The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-external](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-external).
 
 ```
 <dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-external</artifactId>
+    <groupId>com.Io.Cdktn</groupId>
+    <artifactId>cdktn-provider-external</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
 ```
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/cdktf-provider-external-go`](https://github.com/cdktf/cdktf-provider-external-go) package.
+The go package is generated into the [`github.com/cdktn-io/cdktn-provider-external-go`](https://github.com/cdktn-io/cdktn-provider-external-go) package.
 
-`go get github.com/cdktf/cdktf-provider-external-go/external/<version>`
+`go get github.com/cdktn-io/cdktn-provider-external-go/external/<version>`
 
 Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
-within the [go.mod](https://github.com/cdktf/cdktf-provider-external-go/blob/main/external/go.mod#L1) file.
+within the [go.mod](https://github.com/cdktn-io/cdktn-provider-external-go/blob/main/external/go.mod#L1) file.
 
 ## Docs
 
@@ -60,4 +54,41 @@ Find auto-generated docs for this provider here:
 - [C#](./docs/API.csharp.md)
 - [Go](./docs/API.go.md)
 
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-external).
+You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktn/provider-external).
+
+## Versioning
+
+This project is explicitly not tracking the Terraform external provider version 1:1. In fact, it always tracks `latest` of `~> 2.1` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
+
+These are the upstream dependencies:
+
+- [CDK for Terraform](https://cdk.tf) - Last official release
+- [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.5)
+- [Terraform Engine](https://terraform.io)
+
+If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
+
+## Features / Issues / Bugs
+
+Please report bugs and issues to the [CDK for Terraform](https://cdk.tf) project:
+
+- [Create bug report](https://cdk.tf/bug)
+- [Create feature request](https://cdk.tf/feature)
+
+## Contributing
+
+### Projen
+
+This is mostly based on [Projen](https://projen.io), which takes care of generating the entire repository.
+
+### cdktn-provider-project based on Projen
+
+There's a custom [project builder](https://github.com/cdktn-io/cdktn-provider-project) which encapsulate the common settings for all `cdktf` prebuilt providers.
+
+### Provider Version
+
+The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
+
+### Repository Management
+
+The repository is managed by [CDKTN Repository Manager](https://github.com/cdktn-io/cdktn-repository-manager/).

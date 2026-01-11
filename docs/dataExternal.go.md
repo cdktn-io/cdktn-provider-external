@@ -1,28 +1,28 @@
-# `dataExternal` Submodule <a name="`dataExternal` Submodule" id="@cdktf/provider-external.dataExternal"></a>
+# `dataExternal` Submodule <a name="`dataExternal` Submodule" id="@cdktn/provider-external.dataExternal"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataExternal <a name="DataExternal" id="@cdktf/provider-external.dataExternal.DataExternal"></a>
+### DataExternal <a name="DataExternal" id="@cdktn/provider-external.dataExternal.DataExternal"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs/data-sources/external external}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-external.dataExternal.DataExternal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal"
 
 dataexternal.NewDataExternal(scope Construct, id *string, config DataExternalConfig) DataExternal
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig">DataExternalConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig">DataExternalConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-external.dataExternal.DataExternal.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-external.dataExternal.DataExternal.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-external.dataExternal.DataExternal.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-external.dataExternal.DataExternalConfig">DataExternalConfig</a>
+- *Type:* <a href="#@cdktn/provider-external.dataExternal.DataExternalConfig">DataExternalConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetQuery">ResetQuery</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetWorkingDir">ResetWorkingDir</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.resetQuery">ResetQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.resetWorkingDir">ResetWorkingDir</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-external.dataExternal.DataExternal.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-external.dataExternal.DataExternal.toString"></a>
 
 ```go
 func ToString() *string
@@ -80,25 +80,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-external.dataExternal.DataExternal.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-external.dataExternal.DataExternal.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-external.dataExternal.DataExternal.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-external.dataExternal.DataExternal.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-external.dataExternal.DataExternal.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-external.dataExternal.DataExternal.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-external.dataExternal.DataExternal.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-external.dataExternal.DataExternal.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -106,7 +106,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-external.dataExternal.DataExternal.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-external.dataExternal.DataExternal.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-external.dataExternal.DataExternal.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-external.dataExternal.DataExternal.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -122,7 +122,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-external.dataExternal.DataExternal.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-external.dataExternal.DataExternal.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -130,13 +130,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-external.dataExternal.DataExternal.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-external.dataExternal.DataExternal.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-external.dataExternal.DataExternal.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-external.dataExternal.DataExternal.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -144,133 +144,133 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-external.dataExternal.DataExternal.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetQuery` <a name="ResetQuery" id="@cdktf/provider-external.dataExternal.DataExternal.resetQuery"></a>
+##### `ResetQuery` <a name="ResetQuery" id="@cdktn/provider-external.dataExternal.DataExternal.resetQuery"></a>
 
 ```go
 func ResetQuery()
 ```
 
-##### `ResetWorkingDir` <a name="ResetWorkingDir" id="@cdktf/provider-external.dataExternal.DataExternal.resetWorkingDir"></a>
+##### `ResetWorkingDir` <a name="ResetWorkingDir" id="@cdktn/provider-external.dataExternal.DataExternal.resetWorkingDir"></a>
 
 ```go
 func ResetWorkingDir()
@@ -280,17 +280,17 @@ func ResetWorkingDir()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.dataExternal.DataExternal.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-external.dataExternal.DataExternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal"
 
 dataexternal.DataExternal_IsConstruct(x interface{}) *bool
 ```
@@ -311,7 +311,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-external.dataExternal.DataExternal.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-external.dataExternal.DataExternal.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -319,45 +319,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal"
 
 dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-external.dataExternal.DataExternal.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal"
 
 dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-external.dataExternal.DataExternal.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal"
 
 dataexternal.DataExternal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -365,7 +365,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -373,7 +373,7 @@ The construct id used in the generated config for the DataExternal to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -383,7 +383,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -395,30 +395,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.result">Result</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.programInput">ProgramInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.queryInput">QueryInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDirInput">WorkingDirInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.program">Program</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.query">Query</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDir">WorkingDir</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.result">Result</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.programInput">ProgramInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.queryInput">QueryInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.workingDirInput">WorkingDirInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.program">Program</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.query">Query</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.workingDir">WorkingDir</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-external.dataExternal.DataExternal.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-external.dataExternal.DataExternal.property.node"></a>
 
 ```go
 func Node() Node
@@ -430,7 +430,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-external.dataExternal.DataExternal.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-external.dataExternal.DataExternal.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -440,7 +440,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-external.dataExternal.DataExternal.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-external.dataExternal.DataExternal.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -450,7 +450,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-external.dataExternal.DataExternal.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-external.dataExternal.DataExternal.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -460,7 +460,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-external.dataExternal.DataExternal.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-external.dataExternal.DataExternal.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -470,7 +470,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-external.dataExternal.DataExternal.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-external.dataExternal.DataExternal.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -480,7 +480,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-external.dataExternal.DataExternal.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-external.dataExternal.DataExternal.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -490,7 +490,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-external.dataExternal.DataExternal.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-external.dataExternal.DataExternal.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -500,7 +500,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-external.dataExternal.DataExternal.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-external.dataExternal.DataExternal.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -510,7 +510,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-external.dataExternal.DataExternal.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-external.dataExternal.DataExternal.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -520,7 +520,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-external.dataExternal.DataExternal.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-external.dataExternal.DataExternal.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -530,7 +530,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-external.dataExternal.DataExternal.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-external.dataExternal.DataExternal.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -540,7 +540,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-external.dataExternal.DataExternal.property.id"></a>
 
 ```go
 func Id() *string
@@ -550,7 +550,7 @@ func Id() *string
 
 ---
 
-##### `Result`<sup>Required</sup> <a name="Result" id="@cdktf/provider-external.dataExternal.DataExternal.property.result"></a>
+##### `Result`<sup>Required</sup> <a name="Result" id="@cdktn/provider-external.dataExternal.DataExternal.property.result"></a>
 
 ```go
 func Result() StringMap
@@ -560,7 +560,7 @@ func Result() StringMap
 
 ---
 
-##### `ProgramInput`<sup>Optional</sup> <a name="ProgramInput" id="@cdktf/provider-external.dataExternal.DataExternal.property.programInput"></a>
+##### `ProgramInput`<sup>Optional</sup> <a name="ProgramInput" id="@cdktn/provider-external.dataExternal.DataExternal.property.programInput"></a>
 
 ```go
 func ProgramInput() *[]*string
@@ -570,7 +570,7 @@ func ProgramInput() *[]*string
 
 ---
 
-##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktf/provider-external.dataExternal.DataExternal.property.queryInput"></a>
+##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktn/provider-external.dataExternal.DataExternal.property.queryInput"></a>
 
 ```go
 func QueryInput() *map[string]*string
@@ -580,7 +580,7 @@ func QueryInput() *map[string]*string
 
 ---
 
-##### `WorkingDirInput`<sup>Optional</sup> <a name="WorkingDirInput" id="@cdktf/provider-external.dataExternal.DataExternal.property.workingDirInput"></a>
+##### `WorkingDirInput`<sup>Optional</sup> <a name="WorkingDirInput" id="@cdktn/provider-external.dataExternal.DataExternal.property.workingDirInput"></a>
 
 ```go
 func WorkingDirInput() *string
@@ -590,7 +590,7 @@ func WorkingDirInput() *string
 
 ---
 
-##### `Program`<sup>Required</sup> <a name="Program" id="@cdktf/provider-external.dataExternal.DataExternal.property.program"></a>
+##### `Program`<sup>Required</sup> <a name="Program" id="@cdktn/provider-external.dataExternal.DataExternal.property.program"></a>
 
 ```go
 func Program() *[]*string
@@ -600,7 +600,7 @@ func Program() *[]*string
 
 ---
 
-##### `Query`<sup>Required</sup> <a name="Query" id="@cdktf/provider-external.dataExternal.DataExternal.property.query"></a>
+##### `Query`<sup>Required</sup> <a name="Query" id="@cdktn/provider-external.dataExternal.DataExternal.property.query"></a>
 
 ```go
 func Query() *map[string]*string
@@ -610,7 +610,7 @@ func Query() *map[string]*string
 
 ---
 
-##### `WorkingDir`<sup>Required</sup> <a name="WorkingDir" id="@cdktf/provider-external.dataExternal.DataExternal.property.workingDir"></a>
+##### `WorkingDir`<sup>Required</sup> <a name="WorkingDir" id="@cdktn/provider-external.dataExternal.DataExternal.property.workingDir"></a>
 
 ```go
 func WorkingDir() *string
@@ -624,11 +624,11 @@ func WorkingDir() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternal.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-external.dataExternal.DataExternal.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-external.dataExternal.DataExternal.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -640,12 +640,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataExternalConfig <a name="DataExternalConfig" id="@cdktf/provider-external.dataExternal.DataExternalConfig"></a>
+### DataExternalConfig <a name="DataExternalConfig" id="@cdktn/provider-external.dataExternal.DataExternalConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal"
 
 &dataexternal.DataExternalConfig {
 	Connection: interface{},
@@ -665,20 +665,20 @@ import "github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.program">Program</a></code> | <code>*[]*string</code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.query">Query</a></code> | <code>*map[string]*string</code> | A map of string values to pass to the external program as the query arguments. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.workingDir">WorkingDir</a></code> | <code>*string</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.program">Program</a></code> | <code>*[]*string</code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.query">Query</a></code> | <code>*map[string]*string</code> | A map of string values to pass to the external program as the query arguments. |
+| <code><a href="#@cdktn/provider-external.dataExternal.DataExternalConfig.property.workingDir">WorkingDir</a></code> | <code>*string</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -688,7 +688,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -698,7 +698,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -708,7 +708,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -718,7 +718,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -728,7 +728,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -738,7 +738,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -748,7 +748,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Program`<sup>Required</sup> <a name="Program" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.program"></a>
+##### `Program`<sup>Required</sup> <a name="Program" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.program"></a>
 
 ```go
 Program *[]*string
@@ -764,7 +764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Query`<sup>Optional</sup> <a name="Query" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.query"></a>
+##### `Query`<sup>Optional</sup> <a name="Query" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.query"></a>
 
 ```go
 Query *map[string]*string
@@ -780,7 +780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `WorkingDir`<sup>Optional</sup> <a name="WorkingDir" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.workingDir"></a>
+##### `WorkingDir`<sup>Optional</sup> <a name="WorkingDir" id="@cdktn/provider-external.dataExternal.DataExternalConfig.property.workingDir"></a>
 
 ```go
 WorkingDir *string
