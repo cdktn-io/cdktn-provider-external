@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -63,7 +63,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
         providerVersion: '2.3.5',
         providerVersionConstraint: '~> 2.1'
       },
-      terraformProviderSource: 'external'
+      terraformProviderSource: 'hashicorp/external'
     });
     this._alias = config.alias;
   }
