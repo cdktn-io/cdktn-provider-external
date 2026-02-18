@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
+export interface DataExternalConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
   *
@@ -35,7 +35,7 @@ export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs/data-sources/external external}
 */
-export class DataExternal extends cdktf.TerraformDataSource {
+export class DataExternal extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class DataExternal extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataExternal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataExternal to import
   * @param importFromId The id of the existing DataExternal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataExternal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "external", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "external", importId: importFromId, provider });
       }
 
   // ===========
@@ -127,7 +127,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // result - computed: true, optional: false, required: false
-  private _result = new cdktf.StringMap(this, "result");
+  private _result = new cdktn.StringMap(this, "result");
   public get result() {
     return this._result;
   }
@@ -154,28 +154,28 @@ export class DataExternal extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      program: cdktf.listMapper(cdktf.stringToTerraform, false)(this._program),
-      query: cdktf.hashMapper(cdktf.stringToTerraform)(this._query),
-      working_dir: cdktf.stringToTerraform(this._workingDir),
+      program: cdktn.listMapper(cdktn.stringToTerraform, false)(this._program),
+      query: cdktn.hashMapper(cdktn.stringToTerraform)(this._query),
+      working_dir: cdktn.stringToTerraform(this._workingDir),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       program: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._program),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._program),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       query: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._query),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._query),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       working_dir: {
-        value: cdktf.stringToHclTerraform(this._workingDir),
+        value: cdktn.stringToHclTerraform(this._workingDir),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

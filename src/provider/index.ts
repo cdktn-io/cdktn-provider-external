@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -23,7 +23,7 @@ export interface ExternalProviderConfig {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs external}
 */
-export class ExternalProvider extends cdktf.TerraformProvider {
+export class ExternalProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -34,14 +34,14 @@ export class ExternalProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExternalProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExternalProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalProvider to import
   * @param importFromId The id of the existing ExternalProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "external", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "external", importId: importFromId, provider });
       }
 
   // ===========
@@ -94,14 +94,14 @@ export class ExternalProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
+      alias: cdktn.stringToTerraform(this._alias),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
