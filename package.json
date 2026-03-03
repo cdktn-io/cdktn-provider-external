@@ -144,6 +144,13 @@
       }
     ]
   },
+  "cdktf": {
+    "isDeprecated": false,
+    "provider": {
+      "name": "registry.terraform.io/hashicorp/external",
+      "version": "2.3.5"
+    }
+  },
   "cdktn": {
     "isDeprecated": false,
     "provider": {
