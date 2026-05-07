@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2
 #### Initializers <a name="Initializers" id="@cdktn/provider-external.dataExternal.DataExternal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/dataexternal"
 
 dataexternal.NewDataExternal(scope Construct, id *string, config DataExternalConfig) DataExternal
 ```
@@ -312,7 +312,7 @@ func ResetWorkingDir()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-external.dataExternal.DataExternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/dataexternal"
 
 dataexternal.DataExternal_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/dataexternal"
 
 dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/dataexternal"
 
 dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-external.dataExternal.DataExternal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/dataexternal"
 
 dataexternal.DataExternal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/dataexternal"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/dataexternal"
 
 &dataexternal.DataExternalConfig {
 	Connection: interface{},
