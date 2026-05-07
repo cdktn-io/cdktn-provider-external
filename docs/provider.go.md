@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2
 #### Initializers <a name="Initializers" id="@cdktn/provider-external.provider.ExternalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/provider"
 
 provider.NewExternalProvider(scope Construct, id *string, config ExternalProviderConfig) ExternalProvider
 ```
@@ -173,7 +173,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-external.provider.ExternalProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/provider"
 
 provider.ExternalProvider_IsConstruct(x interface{}) *bool
 ```
@@ -205,7 +205,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-external.provider.ExternalProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/provider"
 
 provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -219,7 +219,7 @@ provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-external.provider.ExternalProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/provider"
 
 provider.ExternalProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -233,7 +233,7 @@ provider.ExternalProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-external.provider.ExternalProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/provider"
 
 provider.ExternalProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -418,7 +418,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-external.provider.ExternalProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-external-go/external/v13/provider"
 
 &provider.ExternalProviderConfig {
 	Alias: *string,
