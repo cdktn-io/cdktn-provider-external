@@ -4,7 +4,7 @@
 
 ### DataExternal <a name="DataExternal" id="@cdktn/provider-external.dataExternal.DataExternal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external external}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external external}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-external.dataExternal.DataExternal.Initializer"></a>
 
@@ -110,7 +110,7 @@ A list of strings, whose first element is the program to run and whose subsequen
 
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#program DataExternal#program}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#program DataExternal#program}
 
 ---
 
@@ -122,7 +122,7 @@ A map of string values to pass to the external program as the query arguments.
 
 If not supplied, the program will receive an empty object as its input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#query DataExternal#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#query DataExternal#query}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Working directory of the program. If not supplied, the program will run in the current directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#working_dir DataExternal#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#working_dir DataExternal#working_dir}
 
 ---
 
@@ -491,7 +491,7 @@ The construct id used in the generated config for the DataExternal to import.
 
 The id of the existing DataExternal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ A list of strings, whose first element is the program to run and whose subsequen
 
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#program DataExternal#program}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#program DataExternal#program}
 
 ---
 
@@ -888,7 +888,7 @@ A map of string values to pass to the external program as the query arguments.
 
 If not supplied, the program will receive an empty object as its input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#query DataExternal#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#query DataExternal#query}
 
 ---
 
@@ -902,7 +902,7 @@ public java.lang.String getWorkingDir();
 
 Working directory of the program. If not supplied, the program will run in the current directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external#working_dir DataExternal#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external#working_dir DataExternal#working_dir}
 
 ---
 
